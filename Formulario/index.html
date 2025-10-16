@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+<fieldset>
+    <legend><strong>Rellena tus datos</strong></legend>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+<br><br>    
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+<br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+<br><br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]" placeholder="Introduce tu DNI" required>
+<br><br>
+
+        <label for="Idiomas maternos">Idiomas maternos:</label><br>
+        <input type="radio" id="espanol" name="idioma" value="espanol">
+        <label for="espanol">Español</label><br>
+        <input type="radio" id="ingles" name="idioma" value="ingles">
+        <label for="ingles">Inglés</label><br>
+        <input type="radio" id="frances" name="idioma" value="frances">
+        <label for="frances">Francés</label><br>
+<br><br>
+        <label for="foto">Subir mi foto:</label>
+        <input type="file" id="foto" name="foto">
+<br><br>
+
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Permitir que otros puedan ver mis datos</label>
+<br><br>
+        <button type="submit">Guardar cambios</button>
+        <button type="reset">Borrar los datos introducidos</button>
+    </form>
+</fieldset>
+
+</body>
