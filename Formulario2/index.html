@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+<fieldset>
+    <legend><strong>Datos basicos</strong></legend>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+<br><br>   
+        <label for="Descripción">Descripción:</label><br>
+<textarea rows="4" cols="50"></textarea>
+<br><br>
+
+        <label for="Foto">Foto:</label>
+        <input type ="text" id="foto" name="foto"required>
+        <input type="file" id="foto" name="foto" required>
+
+<br><br>
+
+<input type="checkbox" id="terminos" name="terminos" required>
+        <label for="contador">Añadir contador de visitas</label>
+<br><br>
+        <label for="foto">Subir mi foto:</label>
+        <input type="file" id="foto" name="foto">
+</form>
+</fieldset>
+<fieldset>
+    <legend><strong>Datos economicos</strong></legend>
+    <form action="#" method="post">
+        <label for="Precio">Precio:</label>
+        <input type="text" id="precio" name="precio" required>
+        <label for="Impuestos">Impuestos:</label>
+        <select id="impuestos" name="impuestos" required>
+            <option value="4">4%</option>
+            <option value="7">7%</option>
+            <option value="16">16%</option>
+            <option value="25">25%</option>ç
+            <br><br>
+        </select>
+
+<br><br>
+        <label for="Promoción">Promoción:</label><br>
+        <input type="checkbox" id="promocion" name="promocion">
+        <label for="promocion">Ninguno</label><br>
+        <input type="checkbox" id="promocion" name="promocion">
+        <label for="promocion">Transporte publico</label><br>
+        <input type="checkbox" id="promocion" name="promocion">
+        <label for="promocion">Descuento 5%</label>
+
+        </select>
+    </form>
+</body>
+    
