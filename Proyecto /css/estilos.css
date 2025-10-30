@@ -1,0 +1,38 @@
+h1 {
+  font-family: "Kenia", sans-serif;
+  font-weight: 500;
+  font-size: 28pt;
+  font-style: normal;
+  font-family: cursive;
+  text-decoration: underline;
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: "Kenia", sans-serif;
+  font-weight: 400;
+  font-size: 22pt;
+  text-decoration: underline;
+  color: orange;
+  text-align: center;
+  box-shadow: inset 2px 2px 4px #9e4141;
+}
+p {
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    color: green;
+    text-align: justify;
+    line-height: 1.5;
+}
+section#par {
+    color: black;
+}
+
+article#impar {
+    background-color: #32e90d;
+
+}
+article#par {
+    background-color: #f5f502;
+} 
