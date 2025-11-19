@@ -1,0 +1,56 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.versiones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+    gap: 8px;
+}
+
+.cajas {
+    border: 5px #4411F2 double;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#enterprise {
+    grid-row: span 2 / span 2;
+}
+
+#texto {
+    grid-column: span 2 / span 2;
+    background-color: #4411F2;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 30px;
+    vertical-align: middle;
+    height: auto;
+}
+
+#precio {
+    font-weight: bolder;
+    color: #4411F2;
+    font-weight: bold;
+    margin: 20px;
+    font-size: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+#datos {
+    font-size: 20px;
+    margin: 20px;
+}
