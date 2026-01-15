@@ -19,4 +19,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           # IMPORTANTE: En AwardSpace la ruta suele ser /tunombre.atwebpages.com/
-          server-dir: /ibaisolvesc.awardspace.com/
+          server-dir: /ibaisolvesc.atwebpages.com/
