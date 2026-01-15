@@ -1,0 +1,22 @@
+name: Despliegue a AwardSpace
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Obtener código de GitHub
+        uses: actions/checkout@v3
+
+      - name: 📂 Subir a AwardSpace vía FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # IMPORTANTE: En AwardSpace la ruta suele ser /tunombre.atwebpages.com/
+          server-dir: /ibaisolvesc.awardspace.com/
