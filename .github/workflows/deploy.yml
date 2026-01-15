@@ -8,16 +8,18 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Descargar el repositorio
         uses: actions/checkout@v4
 
-      - name: Upload files to AwardSpace
+      - name: Subir archivos al hosting AwardSpace
         uses: SamKirkland/FTP-Deploy-Action@v4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
-          server-dir: /ibaisolves.atwebpages.com/
+          server-dir: /public_html/
+
 
